@@ -56,9 +56,9 @@ public:
      */
     enum Unit
     {
-        BTP,
-        mBTP,
-        uBTP,
+        BPS,
+        mBPS,
+        uBPS,
         SAT
     };
 

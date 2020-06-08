@@ -901,7 +901,7 @@ private:
      * Wallet staking coins.
      */
     boost::thread_group* stakeThread = nullptr;
-    void StakeBTPs(bool fStake, CConnman* connman);
+    void StakeBPSs(bool fStake, CConnman* connman);
 
 public:
     /*
@@ -1458,10 +1458,10 @@ public:
     /** Implement lookup of key origin information through wallet key metadata. */
     bool GetKeyOrigin(const CKeyID& keyid, KeyOriginInfo& info) const override;
 
-    /* Start staking BTPs */
+    /* Start staking BPSs */
     void StartStake(CConnman* connman = CWallet::defaultConnman);
 
-    /* Stop staking BTPs */
+    /* Stop staking BPSs */
     void StopStake();
 
     static CConnman* defaultConnman;

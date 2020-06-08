@@ -5474,15 +5474,15 @@ bool CWallet::AddCryptedKeyInner(const CPubKey &vchPubKey, const std::vector<uns
     return true;
 }
 
-void CWallet::StakeBTPs(bool fStake, CConnman* connman)
+void CWallet::StakeBPSs(bool fStake, CConnman* connman)
 {
-    ::StakeBTPs(fStake, this, connman, stakeThread);
+    ::StakeBPSs(fStake, this, connman, stakeThread);
 }
 
 void CWallet::StartStake(CConnman *connman)
 {
     m_enabled_staking = true;
-    StakeBTPs(true, connman);
+    StakeBPSs(true, connman);
 }
 
 void CWallet::StopStake()
@@ -5492,7 +5492,7 @@ void CWallet::StopStake()
     {
         auto locked_chain = chain().lock();
         LOCK(cs_wallet);
-        StakeBTPs(false, 0);
+        StakeBPSs(false, 0);
     }
     stakeThread = 0;
 }
