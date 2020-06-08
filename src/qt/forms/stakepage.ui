@@ -282,7 +282,7 @@
           <item>
            <widget class="QLabel" name="labelReward">
             <property name="text">
-             <string>4 BTP/Block</string>
+             <string>6.25 BTP/Block</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
