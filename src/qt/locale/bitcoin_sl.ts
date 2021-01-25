@@ -888,6 +888,10 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <source>Create</source>
         <translation>Ustvari</translation>
     </message>
+    <message>
+        <source>Compiled without sqlite support (required for descriptor wallets)</source>
+        <translation>Prevedeno brez podpore za SQLite (potrebna za deskriptorske denarnice)</translation>
+    </message>
 </context>
 <context>
     <name>EditAddressDialog</name>
@@ -4024,10 +4028,6 @@ Za odpiranje denarnice kliknite Datoteka &gt; Odpri denarnico
     <message>
         <source>%s is set very high!</source>
         <translation>%s je postavljen zelo visoko!</translation>
-    </message>
-    <message>
-        <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
-        <translation>Napaka pri nalaganju denarnice %s. Ime denarnice (parameter -wallet) je podvojeno.</translation>
     </message>
     <message>
         <source>Starting network threads...</source>
